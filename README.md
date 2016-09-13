@@ -1,1 +1,6 @@
-所有资料来源于网络/个人总结
+翻译
+划词翻译
+跨域
+Ripple Emulator
+Allow-Control-Allow-Origin
+
