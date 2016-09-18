@@ -1,6 +1,6 @@
 等待页面加载完成在操作相应的dom
 ionic.DomUtil.ready(function(){});
-$ionicView.leave(function(){});
+$scope.$on('$ionicView.leave', function () {});
 ----------------------------------------
 ionic2
 typescript https://www.gitbook.com/book/zhongsp/typescript-handbook/details
