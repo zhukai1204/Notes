@@ -70,6 +70,48 @@ feature:应用中使用了哪些Native功能，Cordova在运行时会扫描featu
 ionic.DomUtil.ready(function(){});
 $scope.$on('$ionicView.leave', function () {});
 ----------------------------------------
+ ##文件下载##
+    $scope.openLinkInBrowser = function (url) {
+      // Show the action sheet
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: '<center>保存</center>' }
+        ],
+        // destructiveText: 'Delete',
+        titleText: '<center>保存图片？</center>',
+        cancelText: '<center>Cancel</center>',
+        cancel: function () {
+          // add cancel code..
+        },
+        buttonClicked: function (index) {
+          var filename = url.split("/").pop();
+          var targetPath = cordova.file.externalRootDirectory + "DCIM/" + filename;
+          $cordovaFileTransfer.download(encodeURI(url), targetPath, {}, true)
+            .then(function (result) {
+              $ionicPopup.alert({
+                title: '<b>图片保存成功</b>',
+                subTitle: '<img src="img/hh.png">',
+                buttons: [{
+                  text: '嗯',
+                  type: 'button-positive',
+                  onTap: function (e) {
+
+                  }
+                }]
+              })
+            }, function (err) {
+              alert(angular.toJson(err));
+            }, function (progress) {
+              $timeout(function () {
+                $scope.downloadProgress = (progress.loaded / progress.total) * 100;
+              });
+            });
+          return true;
+        }
+      });
+
+    }
+##########################################################
 ionic2
 typescript https://www.gitbook.com/book/zhongsp/typescript-handbook/details
 angular2  https://angular.cn/docs/ts/latest/quickstart.html
