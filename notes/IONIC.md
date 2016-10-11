@@ -66,9 +66,7 @@ android配置：
 <preference name="AndroidLaunchMode" value="singleTop"/>
 feature:应用中使用了哪些Native功能，Cordova在运行时会扫描feature属性就知道哪些Plugin是有效的。在执行cordova plugin add的时候会自动添加feature
 
-等待页面加载完成在操作相应的dom
-ionic.DomUtil.ready(function(){});
-$scope.$on('$ionicView.leave', function () {});
+生命周期函数
 ----------------------------------------
 ionic2
 typescript https://www.gitbook.com/book/zhongsp/typescript-handbook/details
