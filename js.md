@@ -107,3 +107,32 @@ ToNumber
 • +0、-0 和 NaN
 • ""
 真值就是假值列表之外的值。
+
+(1)如果Type(x)是数字,Type(y)是字符串,则返回x == ToNumber(y)的结果。 
+(2)如果Type(x)是字符串,Type(y)是数字,则返回ToNumber(x) == y的结果。
+重点是我们要搞清楚 == 对不同的类型组合怎样处理。== 两边的布尔值会被强制类型转换为数字。
+很奇怪吧?我个人建议无论什么情况下都不要使用== true和== false。
+
+(1) 如果 x 为 null,y 为 undefined,则结果为 true。
+(2) 如果 x 为 undefined,y 为 null,则结果为 true。
+
+(1)如果Type(x)是字符串或数字,Type(y)是对象,则返回x == ToPrimitive(y)的结果; 
+(2)如果Type(x)是对象,Type(y)是字符串或数字,则返回ToPromitive(x) == y的结果。
+
+但有一些值不这样,原因是 == 算法中其他优先级更高的规则。例如:
+    var a = null;
+    var b = Object( a );
+    a == b;
+    var c = undefined;
+    var d = Object( c );
+    c == d;
+    var e = NaN;
+    var f = Object( e );
+    e == f;
+// 和Object()一样 // false
+// 和Object()一样 // false
+// 和new Number( e )一样 // false
+因为没有对应的封装对象,所以 null 和 undefined 不能够被封装(boxed),Object(null) 和 Object() 均返回一个常规对象。
+
+• 如果两边的值中有true或者false,千万不要使用==。 
+• 如果两边的值中有[]、""或者0,尽量不要使用==。
