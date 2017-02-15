@@ -1,3 +1,5 @@
+编码和重排
+
 JavaScript 有 七 种 内 置 类 型:null、undefined、boolean、number、string、object 和
 symbol,可以使用 typeof 运算符来查看。 变量没有类型,但它们持有的值有类型。类型定义了值的行为特征。
 
