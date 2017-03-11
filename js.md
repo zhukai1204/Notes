@@ -1,3 +1,13 @@
+js，in的用法
+1.for(var name in {}){}
+2.var obj={  
+         w:"wen",  
+         j:"jian",  
+         b:"bao"  
+           
+    }        
+var result=(2 in obj); //false     
+var result1=("j" in obj);  //true
 编码和重排
 js 获取一个object的长度 var a = {a:1,b:2};Object.keys(a).length;
 
