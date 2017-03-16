@@ -16,10 +16,10 @@
 }</pre></br>
 左上角倾斜标签</br>
 <pre>
-  <div class="lanren">
+  '<div class="lanren">
      <img src="img/active/active.jpg" style="width:100%;">
      <div class="ribbon-lanren-green"><div class="ribbon-green active-bg1">进行中</div></div>
-  </div>
+  </div>'
 </pre>
 <pre>
 .lanren {
