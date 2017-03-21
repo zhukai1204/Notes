@@ -1,3 +1,4 @@
+<pre>
 config.xml
 Android平台对应的文件路径为：MyProject/platforms/android/res/xml/config.xml
 iOS平台对应的文件路径为：MyProject/platforms/ios/MyProject/config.xml
@@ -114,5 +115,5 @@ ionic2
 typescript https://www.gitbook.com/book/zhongsp/typescript-handbook/details
 typescript sublime 语法高亮 http://blogs.msdn.com/b/interoperability/archive/2012/10/01/sublime-text-vi-emacs-typescript-enabled.aspx
 
-angular2  https://angular.cn/docs/ts/latest/quickstart.html
-ionic2官网 http://ionicframework.com/docs/v2/
+angular2  https://angular.cn/
+</pre>
