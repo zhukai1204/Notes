@@ -1,3 +1,4 @@
+<pre>
 查看端口占用情况
 直接使用 netstat   -anp   |   grep  portno
 即：netstat –apn | grep 8080
@@ -8,3 +9,4 @@
 
 统计当前文件夹下文件的个数，包括子文件夹里的 
 ls -lR|grep "^-"|wc -l
+</pre>
