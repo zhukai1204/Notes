@@ -1,3 +1,4 @@
+<pre>
 js，in的用法
 1.for(var name in {}){}
 2.var obj={  
@@ -66,7 +67,7 @@ a.toPrecision( 2 ); // "43"
            Number.EPSILON = Math.pow(2,-52);
      }
      function numbersCloseEnoughToEqual(n1,n2) {
-         return Math.abs( n1 - n2 ) < Number.EPSILON;
+         return Math.abs( n1 - n2 ) &lt Number.EPSILON;
       }
      var a = 0.1 + 0.2;
      var b = 0.3;
@@ -147,3 +148,4 @@ ToNumber
 
 • 如果两边的值中有true或者false,千万不要使用==。 
 • 如果两边的值中有[]、""或者0,尽量不要使用==。
+</pre>
