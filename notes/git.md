@@ -18,4 +18,8 @@ remotes/origin/release
 6. git checkout -b dev origin/dev，作用是checkout远程的dev分支，在本地起名为dev分支，并切换到本地的dev分支
 7. git checkout -b release origin/release，作用参见上一步解释
 8. git checkout dev，切换回dev分支，并开始开发。
+
+删除远程分支
+git push origin --delete branchName
+http://zengrong.net/post/1746.htm
 </pre>
