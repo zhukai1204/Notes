@@ -1,4 +1,7 @@
 <pre>
+ionic2安装时遇到There was an error with the spawned command: npminstall  
+跳过node_module安装ionic start app --v2 --skip-npm
+
 config.xml
 Android平台对应的文件路径为：MyProject/platforms/android/res/xml/config.xml
 iOS平台对应的文件路径为：MyProject/platforms/ios/MyProject/config.xml
