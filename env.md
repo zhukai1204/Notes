@@ -48,4 +48,9 @@
     show dbs
     #当前db版本 
     db.version();
+    
+    
+    pm2启动sails
+    pm2 start app.js -x -- --prod
+    <a href="http://sailsjs.com/documentation/concepts/deployment">deployment</a>
 </pre>
