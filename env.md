@@ -53,4 +53,16 @@
     pm2启动sails
     pm2 start app.js -x -- --prod
     <a href="http://sailsjs.com/documentation/concepts/deployment">deployment</a>
+    
+    centos nvm 安装
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.1/install.sh | bash
+    source ~/.bash_profile
+    通过nvm安装管理nodejs
+    1、列出所有可安装的版本nvm list-remote；
+    2、安装相应的版本使用nvm install v0.12.4；还可以直接安装 iojs 各个版本；
+    3、查看一下你当前已经安装的版本:nvm ls；
+    4、切换版本；nvm use v0.12.4；
+    5、设置默认版本 nvm alias default v0.12.4
+
+注意：具体操作很简单，使用帮助通过nvm help；
 </pre>
