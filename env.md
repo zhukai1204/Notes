@@ -63,6 +63,46 @@
     3、查看一下你当前已经安装的版本:nvm ls；
     4、切换版本；nvm use v0.12.4；
     5、设置默认版本 nvm alias default v0.12.4
-
-注意：具体操作很简单，使用帮助通过nvm help；
+    注意：具体操作很简单，使用帮助通过nvm help；
+    
+    
+    #安装gcc
+    yum -y install gcc
+    #下载redis
+    curl -O  http://download.redis.io/releases/redis-3.2.8.tar.gz
+    #解压
+    tar -zxvf redis-3.2.8.tar.gz
+    #转换目录
+    cd redis-3.2.8/deps/
+    #编译依赖
+    make geohash-int hiredis jemalloc linenoise lua
+    #转换目录
+    cd ..
+    #编译Redis
+    make && make install
+    #转换目录
+    cd utils/
+    #使用脚本安装服务
+    ./install_server.sh
+    #启动服务
+    systemctl start redis_6379
+    systemctl status redis_6379
+    
+    Please select the redis port for this instance: [6379] yes
+    Selecting default: 6379
+    Please select the redis config file name [/etc/redis/6379.conf] y
+    Please select the redis log file name [/var/log/redis_6379.log] y
+    Please select the data directory for this instance [/var/lib/redis/6379] y
+    Please select the redis executable path [/usr/local/bin/redis-server] y
+    Selected config:
+    Port           : 6379
+    Config file    : y
+    Log file       : y
+    Data dir       : y
+    Executable     : /usr/local/bin/redis-server
+    Cli Executable : /usr/local/bin/redis-cli
+    Is this ok? Then press ENTER to go on or Ctrl-C to abort.
+    Copied /tmp/6379.conf => /etc/init.d/redis_6379
+    Installing service...
+    Successfully added to chkconfig!
 </pre>
