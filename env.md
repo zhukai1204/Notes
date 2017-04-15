@@ -105,4 +105,12 @@
     Copied /tmp/6379.conf => /etc/init.d/redis_6379
     Installing service...
     Successfully added to chkconfig!
+    
+    启动服务
+    Redis-server redis.conf
+    关闭服务
+    redis-cli shutdown
+
+    客户端启动
+    redis-cli
 </pre>
