@@ -19,6 +19,8 @@ remotes/origin/release
 7. git checkout -b release origin/release，作用参见上一步解释
 8. git checkout dev，切换回dev分支，并开始开发。
 
+删除本地分支
+git branch -D branchName
 删除远程分支
 git push origin --delete branchName
 <a href="http://zengrong.net/post/1746.htm">详细说明文章</a>
