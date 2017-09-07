@@ -1,3 +1,4 @@
+<pre>
 1.下载安装包
 wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.2.9.tgz
 下载完成后解压缩压缩包
@@ -315,4 +316,8 @@ system.indexes
    
 system.users      
    
->      
+>     
+mongodb数组操作
+http://howsun.blog.sohu.com/305176472.html
+https://www.pocketdigi.com/20130526/1084.html
+</pre>
