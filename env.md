@@ -15,6 +15,7 @@
     n stable
  二.centos安装mongodb
   1.获取mongodb
+    <a href="https://www.mongodb.com/download-center#community">查看最新版</a>
     wget https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel70-3.2.6.tgz
   2.解压安装
     tar zxvf mongodb-linux-x86_64-3.2.6.tgz
