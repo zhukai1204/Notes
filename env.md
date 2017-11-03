@@ -134,5 +134,30 @@
     # source /etc/bashrc
     5.检查一下版本号
     # git --version
+    
+    Phantomjs 安装
+    <a href="http://phantomjs.org/download.html">Phantomjs最新版</a>
+    #wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+
+    #tar -xjvf phantomjs-1.9.7-linux-x86_64.tar.bz2
+
+    将可执行文件放入系统路径：　
+
+     #sudo ln -s ~/bin/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs
+
+    安装依赖——fontconfig和freetype：　
+
+     #yum install fontconfig freetype2
+
+    CentOS - 执行phantomjs报错
+    报错信息：phantomjs: error while loading shared libraries: libfreetype.so.6: cannot open shared object file: No such file     or directory
+    解决方法：
+    执行
+    # sudo yum install freetype
+    如果还报错
+    执行
+    # sudo yum install fontconfig freetype libfreetype.so.6 
+    如果使用 ubuntu  或者 debian
+    use apt-get install to install this package
 
 </pre>
